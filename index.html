@@ -4,40 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Benedikt Polacek</title>
     <script src="./script.js" defer></script>
   </head>
-  <body>
+  <body id="home">
     <nav>
       <ul class="nav-list">
         <ul class="nav_to_thisPage">
-          <li><a>About Me</a></li>
-          <li><a>Skills</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about_me">About Me</a></li>
+          <li><a href="#mySkills">Skills</a></li>
+          <li><a href="#contacts">Contact</a></li>
         </ul>
         <ul class="nav_to_anotherPage">
-          <li><a>Contact</a></li>
           <li class="chat-app"><a>Chat App</a></li>
         </ul>
       </ul>
     </nav>
-    <div class="top-space">
+    <div class="top-space" >
       <header>
         <img src="./Images/logo.jpg" class="logo"/>
         <div class="student">
-          <h1>Benedikt Polacek</h1>
-          <h3>Student of Gymnasium Veľká Okružná</h3>
+          <h1 class="rise-title">Benedikt Polacek</h1>
+          <h3 class="rise-subtitle">Student of Gymnasium Veľká Okružná</h3>
         </div>
       </header>
 
       <main>
         
-        <div class="header-about-me">
+        <div class="header-about-me fade-up" id="about_me">
           <h2>About Me</h2>
         </div>
           <div class="info-about-me">
-            <section>
+            <section class="fade-up">
               <div class="text">
                 <h3>Who am I?</h3>
+                <hr>
                 <p>
                   I’m a gymnasium student with a strong passion for physics and
                   mathematics. My dedication to these fields has led me to win a
@@ -49,9 +52,10 @@
               </div>
             </section>
 
-            <section>
+            <section class="fade-up">
               <div class="text">
                 <h3>Interests</h3>
+                <hr>
                 <p>
                   Outside of academics and programming, I enjoy listening to music,
                   especially rock, pop, metal, and blues. Music provides a creative
@@ -65,12 +69,12 @@
               </div>
             </section>
           </div>
-          <div class="skills">
+          <div class="skills fade-up" id="mySkills">
             <section >
               <div class="heading-skills">
-                <h3>Skills</h3>
+                <h3 class="fade-up" id="skills">Skills</h3>
               </div>
-              <div class="images">
+              <div class="images fade-up">
                 <div>
                   <h4 id="html-title">HTML</h4>
                   <img src="./Images/html.png" id="html"/>
@@ -110,7 +114,28 @@
             </section>
           </div>
       </main>
-      <footer></footer>
+      <footer id="contacts">
+        <h3>
+          Contacts:
+        </h3>
+        <ul>
+          <li>
+            <a href="mailto:polacek.benedict@gmail.com"  target="_blank">
+              <img src="./Images/email.png">
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/BenedictPolacek"  target="_blank">
+              <img src="./Images/github.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/benedict-polacek/"  target="_blank" >
+              <img src="./Images/linkedin-app-white-icon.webp">
+            </a>
+          </li>
+
+      </footer>
     </div>
   </body>
 </html>
