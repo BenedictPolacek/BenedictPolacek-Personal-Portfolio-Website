@@ -4,23 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/6e0e2c9142.js" crossorigin="anonymous"></script>
     <title>Benedikt Polacek</title>
     <script src="./script.js" defer></script>
   </head>
-  <body id="home">
+  <body id="body_student">
+
     <nav>
-      <ul class="nav-list">
-        <ul class="nav_to_thisPage">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about_me">About Me</a></li>
-          <li><a href="#mySkills">Skills</a></li>
-          <li><a href="#contacts">Contact</a></li>
-        </ul>
-        <ul class="nav_to_anotherPage">
-          <li class="chat-app"><a>Chat App</a></li>
-        </ul>
-      </ul>
+      <div id="nav-list">
+        <div id="home-page-nav">
+          <div id="icon">
+            <i class="fa-solid fa-bars fa-lg" id="bars"></i>
+          </div>
+          <ul id="home-page-list">
+            <li><a href="#body_student">Student</a></li>
+            <li><a href="#about_me">About Me</a></li>
+            <li><a href="#my_skills">Skills</a></li>
+            <li><a href="#contacts">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul id="projects">
+            <li><a>Chat App</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
     <div class="top-space" >
       <header>
@@ -69,8 +77,8 @@
               </div>
             </section>
           </div>
-          <div class="skills fade-up" id="mySkills">
-            <section >
+          <div class="skills fade-up" >
+            <section id="my_skills">
               <div class="heading-skills">
                 <h3 class="fade-up" id="skills">Skills</h3>
               </div>
@@ -103,13 +111,7 @@
                   <h4>VS Code</h4>
                   <img src="./Images/vscode.png" id="vscode"/>
                 </div>        
-                <!--HTML5
-                    CSS
-                    JS
-                    Git
-                    GitHub
-                    node JS
-                    VS Code-->
+                <!--HTML5 CSS JS Git GitHub node JS VS Code-->
               </div>
             </section>
           </div>
