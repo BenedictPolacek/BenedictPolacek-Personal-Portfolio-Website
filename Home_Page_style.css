@@ -383,13 +383,11 @@ footer img {
   }
   .student {
     margin: 0 0.4rem;
+    margin-right: 1rem;
   }
   header .logo {
     margin: 0 0.6rem;
     margin-bottom: 1rem;
-  }
-  .student {
-    margin-right: 1rem;
   }
   nav #nav-list #home-page-list {
     position: absolute;
