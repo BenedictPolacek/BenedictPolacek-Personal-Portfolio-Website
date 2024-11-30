@@ -11,7 +11,7 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 3;
-  height: 3.5rem;
+  height: 4rem;
   background-color: #111111;
   border-bottom: 0.3rem solid black;
   opacity: 0.9;
@@ -23,13 +23,14 @@ nav #nav-list {
   font-size: 1.5rem;
   padding: 0 2.5rem;
 }
-nav #nav-list ul{
+nav #nav-list ul {
   margin: 0;
   padding: 0;
 }
 nav #nav-list #home-page-nav {
-  display: flex;  
+  display: flex;
   height: 100%;
+  align-items: center;
 }
 nav #nav-list li {
   margin: 0.25rem 0.4rem;
@@ -41,12 +42,15 @@ nav #nav-list li {
   background: rgba(0, 0, 0, 1);
   border-radius: 0.5rem;
 }
+nav #nav-list #projects-nav {
+  display: flex;
+  align-items: center;
+}
 nav #nav-list li a {
   position: relative;
   z-index: 2;
   text-decoration: inherit;
   color: inherit;
-
 }
 nav #nav-list #home-page-list {
   display: flex;
@@ -60,7 +64,7 @@ nav #nav-list #home-page-list {
   transform: translateX(-10px);
   transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
 }
-nav #icon > #bars{
+nav #icon > #bars {
   pointer-events: none;
 }
 nav #icon {
@@ -77,7 +81,7 @@ nav #icon {
 
 .top-space {
   position: relative;
-  top: 60px;
+  top: 68px;
 }
 
 header {
@@ -183,8 +187,8 @@ main .info-about-me section::before {
   position: absolute;
   height: 100%;
   background-image: linear-gradient(
-    rgba(70, 156, 255, 0.5),
-    rgba(85, 26, 194, 0.5),
+    rgba(24, 57, 94, 0.5),
+    rgba(2, 20, 80, 0.5),
     #0e0e0e
   );
   width: 100%;
@@ -318,7 +322,6 @@ footer img {
   transform: translate3d(0, 0, 0);
 }
 
-
 @media only screen and (max-width: 1200px) {
   header h1 {
     font-size: 4rem;
@@ -334,7 +337,7 @@ footer img {
     align-items: center;
     margin-bottom: 0rem;
   }
-  main .info-about-me .text{
+  main .info-about-me .text {
     padding: 2rem 5rem;
   }
   main .info-about-me section {
@@ -360,7 +363,6 @@ footer img {
 @media only screen and (max-width: 920px) {
   nav #nav-list {
     font-size: 1rem;
-
   }
   nav #nav-list ul {
     padding: 0;
@@ -376,17 +378,17 @@ footer img {
   }
 }
 @media only screen and (max-width: 800px) {
-  header{
+  header {
     flex-direction: column;
   }
-  .student{
+  .student {
     margin: 0 0.4rem;
   }
-  header .logo{
+  header .logo {
     margin: 0 0.6rem;
     margin-bottom: 1rem;
   }
-  .student{
+  .student {
     margin-right: 1rem;
   }
   nav #nav-list #home-page-list {
@@ -399,52 +401,50 @@ footer img {
   nav #icon {
     display: flex;
   }
-  main .info-about-me .text{
+  main .info-about-me .text {
     padding: 2rem 3rem;
   }
   footer h3 {
     margin: auto 0.5rem;
   }
-  footer li{
+  footer li {
     margin: 0 0;
     margin-right: 0.7rem;
   }
-
 }
 @media only screen and (max-width: 600px) {
-  nav #nav-list li{
+  nav #nav-list li {
     padding: 0 1rem;
   }
-  header .logo{
+  header .logo {
     width: 13rem;
   }
-  main h2{
+  main h2 {
     font-size: 2.5rem;
   }
-  main .info-about-me .text{
+  main .info-about-me .text {
     padding: 2rem 1.5rem;
   }
-  main .info-about-me .text h3{
+  main .info-about-me .text h3 {
     margin: 0;
   }
   main .info-about-me .text p {
     font-size: 0.95rem;
     line-height: 1.8rem;
   }
-  main .skills .images div{
+  main .skills .images div {
     width: 6rem;
   }
-  footer{
+  footer {
     justify-content: center;
   }
-  footer ul{    
+  footer ul {
     justify-content: center;
-
   }
-  footer h3{
+  footer h3 {
     display: none;
   }
-  footer img{
+  footer img {
     width: 2rem;
   }
 }
